@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../images/logo.png'
+import righthalfnew from '../images/righthalfnew.png'
+import rightfullnew from '../images/rightfullnew.png'
 import '../components/Navbar.css'
 import {Link as Links, animateScroll as scroll} from 'react-scroll';
 
@@ -199,6 +201,29 @@ const CopyRight = styled.div`
     }
 `;
 
+const ImageRight = styled.img`
+    object-fit: contain;
+    width: 7.83%; 
+    position: absolute;
+    right: 14.2%;  
+    bottom: 64.6%;
+    ${'' /* @media only screen and (max-width: 400px){
+       width: 80%;
+       margin-bottom: 0;
+    } */}
+`;
+const ImageRightHalf = styled.img`
+    object-fit: contain;
+    width: 14.7%; 
+    position: absolute;
+    right: 0;  
+    bottom: 9.97%;
+    ${'' /* @media only screen and (max-width: 400px){
+       width: 80%;
+       margin-bottom: 0;
+    } */}
+`;
+
 function Footer() {
     return (
         <div>
@@ -233,6 +258,8 @@ function Footer() {
                 </IconItems>
                 </FooterContainer>
                 <CopyRight>2020 @ All rights reserved by pixelspark.co</CopyRight>
+                <ImageRightHalf src={righthalfnew} alt="" />
+                <ImageRight src={rightfullnew} alt="" />
             </Container>
         </div>
     )

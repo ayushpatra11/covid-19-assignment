@@ -27,6 +27,9 @@ const MapandCounter = styled.div`
     min-height: 90vh;
     align-items: center;
     padding: 0;
+    @media only screen and (max-width: 600px){
+        width: 95%;
+    }
 `;
 
 const TextBanner = styled.h1`
@@ -69,7 +72,7 @@ const Counter1 = styled.div`
     display: grid;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 90%;
+    width: 100%;
     height: 18%;
     h1{
         margin: 20px 0;
