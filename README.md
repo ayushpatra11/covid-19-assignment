@@ -1,9 +1,9 @@
 # COVID-19 Assignment
-This is an assignment submission for Blue Sky Analytics, on behalf of Ayush Patra.
+This is an assignment submission for Blue Sky Analytics, by Ayush Patra.
 
 I have made this application using React.js. I have used React Hooks, React Router, Axios, React Scroll, and styled components to complete this project.
 
-As a bonus, I've made a live reporting section, where cases around the world are reported and the application checks to see if there has been an increase in active cases for each country.
+As a bonus, I've made a live reporting section, where cases around the world are reported and the application checks to see if there has been an increase in active cases for each country everyday.
 
 I have used 2 public APIs for the same, one for covid data and the other for flags.
 
