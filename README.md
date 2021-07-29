@@ -1,5 +1,5 @@
 # COVID-19 Assignment
-This is an assignment submission for Blue Sky Analytics, by Ayush Patra.
+This is an assignment submission for Blue Sky Analytics by Ayush Patra.
 
 I have made this application using React.js. I have used React Hooks, React Router, Axios, React Scroll, and styled components to complete this project.
 
