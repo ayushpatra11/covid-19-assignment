@@ -1,0 +1,216 @@
+
+
+.navbar {
+    padding-top: 23px;
+    font-family: 'Archivo', sans-serif;
+    background: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  
+  .navbar.active{
+    background: #ffff;
+    }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    max-width: 1500px;
+  }
+  
+  .navbar-logo {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #035755;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+  }
+  
+  .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 50vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    height: 80px;
+  }
+  
+  .nav-links {
+    cursor: pointer;
+    font-size: 18px;
+    color: #035755;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0 1rem;
+    height: 82%;
+  }
+
+  .nav-linksn {
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: #035755;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0 1rem;
+    height: 90%;
+  }
+
+  .logo{
+      margin-right: 10px;
+  }
+  
+  .nav-links:hover {
+    /* border-bottom: 6px dotted #FB4C47; */
+    transition: all 0.2s ease;
+    color: #FB3C47;
+    
+    /* border-bottom: 6px solid transparent;
+  border-image: url(../images/Ellipse.png)0 0 20 0 /6px /6px ;
+   */
+  }
+
+  .nav-links-active {
+    color: #FB3C47;
+    border-bottom: 6px dotted #FB4C47;
+  }
+  
+  .nav-linksn-active {
+    color: #FB3C47;
+    border-bottom: 6px dotted #FB4C47;
+  }
+  
+  .fa-bars {
+    color: #035755;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .nav-links:hover {
+      border-bottom: none;
+      
+      
+      /* border-bottom: 6px solid transparent;
+    border-image: url(../images/Ellipse.png)0 0 20 0 /6px /6px ;
+     */
+    }
+  
+    .nav-links-active {
+      border-bottom: none;
+    }
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -150%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #ffff;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: transparent;
+      color: #FB3C47;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #035755;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #035755;
+      padding: 14px 20px;
+      /* border: 1px solid grey; */
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: transparent;
+      color: #FB4C47;
+      transition: 250ms;
+    }
+  }
