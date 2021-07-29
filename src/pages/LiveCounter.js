@@ -232,7 +232,7 @@ function LiveCounter() {
                    <Map>
                     
                    <GoogleMapReact
-                    bootstrapURLKeys={{ key: 'AIzaSyCQalk3vEyAm-cnJCTPmcifcuVQ9YdcA48' }}
+                    bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
                     options={{styles: style, backgroundColor: '#167C51'}}
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
