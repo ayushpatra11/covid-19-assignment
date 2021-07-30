@@ -15,3 +15,5 @@ I have tried to make the website as close as possible to the bluleprint provided
 ![image](https://user-images.githubusercontent.com/62289380/127522703-e379d837-0c07-4580-813c-363bc208b5c9.png)
 
 YouTube Link for demo of the site: https://youtu.be/dq_tDaktuno
+
+It is deployed using Netlify here: https://6103b4d161c2710c7650142e--covid-19-assignment.netlify.app/
